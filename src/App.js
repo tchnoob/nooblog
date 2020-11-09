@@ -1,8 +1,9 @@
+import Layout from "./layout/MainLayout";
 
 function App() {
   return (
     <div className="App">
-      hi there
+      <Layout />
     </div>
   );
 }

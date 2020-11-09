@@ -1,0 +1,33 @@
+.layout {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.header-zone {
+  margin: 20px;
+}
+
+.body-zone {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.body-zone div {
+  border: 1px solid gray;
+}
+
+.menu {
+  flex: 2;
+}
+
+.content-view {
+  flex: 7;
+}
+
+.summary {
+  flex: 1;
+}
