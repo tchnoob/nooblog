@@ -6,7 +6,7 @@
 }
 
 .header-zone {
-  margin: 20px;
+  padding: 20px;
 }
 
 .body-zone {
@@ -16,18 +16,22 @@
   flex-direction: row;
 }
 
-.body-zone div {
+/* .body-zone div {
   border: 1px solid gray;
-}
+} */
 
 .menu {
-  flex: 2;
+  flex: 1;
+  text-align: right;
+  padding: 3%;
 }
 
 .content-view {
   flex: 7;
+  padding: 1%;
 }
 
 .summary {
   flex: 1;
+  padding: 1%;
 }

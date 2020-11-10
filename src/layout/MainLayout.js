@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import {
+  ContentContainer,
+  MenuContainer,
+  SummaryContainer,
+} from "../container";
 import "./style.css";
 
 class MainLayout extends Component {
@@ -7,9 +12,15 @@ class MainLayout extends Component {
       <div className="layout">
         <div className="header-zone">nooblog.io</div>
         <div className="body-zone">
-          <div className="menu">menu</div>
-          <div className="content-view">menu</div>
-          <div className="summary">menu</div>
+          <div className="menu">
+            <MenuContainer />
+          </div>
+          <div className="content-view">
+            <ContentContainer />
+          </div>
+          <div className="summary">
+            <SummaryContainer />
+          </div>
         </div>
       </div>
     );
