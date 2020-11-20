@@ -4,9 +4,9 @@ class MenuContainer extends Component {
   render() {
     return (
       <div>
-        <div>스크랩</div>
-        <div>일상</div>
-        <div>개발</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
       </div>
     );
   }

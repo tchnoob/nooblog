@@ -4,12 +4,14 @@ import {
   MenuContainer,
   SummaryContainer,
 } from "../container";
+import AppBarView from "../container/AppBarView";
 import "./style.css";
 
 class MainLayout extends Component {
   render() {
     return (
       <div className="layout">
+        <AppBarView />
         <div className="header-zone">nooblog.io</div>
         <div className="body-zone">
           <div className="menu">

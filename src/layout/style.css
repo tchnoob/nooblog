@@ -1,37 +1,46 @@
+body {
+  margin: 0px;
+}
+
 .layout {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  /* display: flex;
+  justify-content: stretch;
+  flex-direction: column; */
   height: 100%;
+  width: 100%;
 }
 
 .header-zone {
   padding: 20px;
+  height: 150px;
+  background-color: gray;
 }
 
 .body-zone {
   height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
+  width: 100%;
+  /* margin-left: 10%;
+  margin-right: 15%; */
 }
-
-/* .body-zone div {
-  border: 1px solid gray;
-} */
 
 .menu {
   flex: 1;
   text-align: right;
   padding: 3%;
+  background-color: aquamarine;
+  width: 20%;
 }
 
 .content-view {
   flex: 7;
-  padding: 1%;
+  background-color: aliceblue;
 }
 
 .summary {
   flex: 1;
-  padding: 1%;
+  background-color: cornflowerblue;
+  width: 10%;
 }
