@@ -1,9 +1,12 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-// import React, { Component } from "react";
+import "./style.css";
 
 const MenuItem = ({ children, path }) => {
-  return <div to={path}>{children}</div>;
+  return (
+    <a className="menu-item" href={path}>
+      {children}
+    </a>
+  );
 };
 
 export default MenuItem;

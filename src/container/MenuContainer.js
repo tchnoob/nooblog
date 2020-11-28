@@ -1,16 +1,14 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { MenuItem } from "../component";
 class MenuContainer extends Component {
   render() {
     return (
-      <div>
-        <MenuItem path="/post/1">1</MenuItem>
-        <br />
-        <MenuItem path="/post/2">2</MenuItem>
-        <br />
-        <MenuItem path="/post/3">3</MenuItem>
-        <br />
-      </div>
+      <Fragment>
+        <MenuItem path="/study">공부</MenuItem>
+        <MenuItem path="/review">리뷰</MenuItem>
+        <MenuItem path="/scrap">스크랩</MenuItem>
+        <MenuItem path="/things">이것저것</MenuItem>
+      </Fragment>
     );
   }
 }

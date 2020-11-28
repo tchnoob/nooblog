@@ -1,44 +1,38 @@
 body {
   margin: 0px;
+  height: 100%;
 }
 
 .layout {
-  /* display: flex;
-  justify-content: stretch;
-  flex-direction: column; */
   height: 100%;
   width: 100%;
+}
+
+.text-selection-disabled {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                              supported by Chrome, Edge, Opera and Firefox */
 }
 
 .header-zone {
   padding: 20px;
-  height: 150px;
-  background-color: gray;
+  height: 10%;
+  background-color: #1a1a1a;
+  opacity: 82%;
 }
 
 .body-zone {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  max-height: 80%;
   width: 100%;
-}
-
-.menu {
-  flex: 1;
-  text-align: right;
-  padding: 3%;
-  background-color: aquamarine;
-  width: 20%;
+  overflow-y: auto;
 }
 
 .content-view {
-  flex: 7;
-  background-color: aliceblue;
-}
-
-.summary {
-  flex: 1;
-  background-color: cornflowerblue;
-  width: 10%;
+  background-color: #e9eaea;
+  margin-left: 10%;
+  margin-right: 10%;
 }
