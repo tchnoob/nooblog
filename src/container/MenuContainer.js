@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-
+import { MenuItem } from "../component";
 class MenuContainer extends Component {
   render() {
     return (
       <div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <MenuItem path="/post/1">1</MenuItem>
+        <br />
+        <MenuItem path="/post/2">2</MenuItem>
+        <br />
+        <MenuItem path="/post/3">3</MenuItem>
+        <br />
       </div>
     );
   }
