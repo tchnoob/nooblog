@@ -61,10 +61,40 @@ a:active {
   width: 300px;
   height: 350px;
   /* flex: 1; */
+  border: 2px solid #cccccc;
+  border-radius: 6px;
   margin: 5px;
-  border: 1px solid gray;
-  border-radius: 3px;
-  padding: 10px;
+  opacity: 90%;
+}
+
+.post-card:hover {
+  border: 2px solid #555555;
+  background-color: #fafafa;
+  opacity: 100%;
+}
+
+.post-card:active {
+  border: 2px solid #66aaff;
+  font-weight: bold;
+}
+
+.post-card .image {
+  height: 50%;
+  width: 100%;
+  background-color: black;
+  opacity: inherit;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.post-card .title {
+  padding: 5px;
+  font-size: 120%;
+  font-weight: 500;
+}
+
+.post-card .content {
+  padding: 5px;
 }
 
 .post-container {
@@ -88,5 +118,5 @@ a:active {
   justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-  align-items: stretch;
+  align-items: baseline;
 }
