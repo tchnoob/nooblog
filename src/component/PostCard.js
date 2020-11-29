@@ -1,24 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const PostCard = ({ context: { title, text, id }, index }) => {
-  const routeTo = (path) => {
-    window.history.pushState(
-      null,
-      null,
-      `${window.location.origin}/post/${path}`
-    );
-    window.history.go();
-  };
   return (
-    <div
+    <Link
       className="post-card text-selection-disabled"
-      onClick={() => routeTo(title)}
+      as="div"
+      // onClick={() => Functions.routeTo(`/post/${title}`)}
+      to={`/post/${title}`}
     >
       <div className="image"></div>
       <div className="title">{title}</div>
       <div className="content">{text}</div>
-    </div>
+    </Link>
   );
 };
 
