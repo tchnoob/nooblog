@@ -8,6 +8,26 @@ module.exports = {
     publicPath: "/nooblog",
   },
   devServer: {
+    proxy: {
+      "/post/recent": {
+        target: "http://localhost:3000",
+        pathRewrite: {
+          "/post/recent/": "/post/?_sort=date&_order=desc&_limit=",
+        },
+      },
+      "/post/tag": {
+        target: "http://localhost:3000",
+        pathRewrite: {
+          "/post/tag/": "/post/?tag=",
+        },
+      },
+      "/post/id": {
+        target: "http://localhost:3000",
+        pathRewrite: {
+          "/post/id/": "/post/?id=",
+        },
+      },
+    },
     contentBase: "./src",
     inline: true,
     // disableHostCheck: true,
