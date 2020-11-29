@@ -2,9 +2,9 @@ import React from "react";
 import { PostCard } from "../component";
 import "./style.css";
 
-const PostCardList = ({ context, match }) => {
+const PostCardList = ({ context, match, ...props }) => {
   const { category } = match.params;
-  const cards = Array.from({ length: 20 }).map((r, i) => (
+  const cards = Array.from({ length: 5 }).map((r, i) => (
     <PostCard
       key={`postcard${i}`}
       index={i}

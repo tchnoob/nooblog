@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
 const PostView = (props) => {
-  const { query } = this.props.match.params;
+  const { query } = props.match.params;
   return <div>Post : {query}</div>;
 };
 

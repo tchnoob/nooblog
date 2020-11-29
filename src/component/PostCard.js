@@ -1,14 +1,16 @@
 import React from "react";
+import { inject } from "mobx-react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-const PostCard = ({ context: { title, text, id }, index }) => {
+const PostCard = ({ context: { title, text, id }, index, ...props }) => {
+  const { setTitle } = props;
   return (
     <Link
       className="post-card text-selection-disabled"
       as="div"
-      // onClick={() => Functions.routeTo(`/post/${title}`)}
       to={`/post/${title}`}
+      onClick={() => setTitle(title)}
     >
       <div className="image"></div>
       <div className="title">{title}</div>
@@ -17,4 +19,4 @@ const PostCard = ({ context: { title, text, id }, index }) => {
   );
 };
 
-export default PostCard;
+export default inject(({ store }) => ({ setTitle: store.setTitle }))(PostCard);

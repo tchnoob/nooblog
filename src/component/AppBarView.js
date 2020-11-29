@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
+import { observer, inject } from "mobx-react";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -9,8 +10,14 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+@inject("store")
+@observer
 class AppBarView extends Component {
-  onClick = () => {};
+  // constructor(props) {
+  //   super(props);
+  //   this.store = props.store;
+  // }
+
   render() {
     return (
       <AppBar position="static" className="text-selection-disabled">
@@ -20,7 +27,7 @@ class AppBarView extends Component {
             className="IconButton"
             color="inherit"
             aria-label="menu"
-            onClick={this.onClick}
+            onClick={this.props.store.toggleMenuView}
           >
             <MenuIcon />
           </IconButton>
@@ -39,7 +46,7 @@ class AppBarView extends Component {
             color="inherit"
             style={{ marginLeft: "130px" }}
           >
-            # 내가 블로그를 오픈한 이유?
+            {this.props.store.title}
           </Typography>
 
           <div className="app-bar-search">

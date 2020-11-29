@@ -1,28 +1,29 @@
 import React, { Component } from "react";
-import {
-  ContentContainer,
-  MenuContainer,
-  SummaryContainer,
-} from "../container";
+import { observer, inject } from "mobx-react";
+import { ContentContainer, MenuContainer } from "../container";
 import AppBarView from "../component/AppBarView";
 import "./style.css";
 
+@inject("store")
+@observer
 class MainLayout extends Component {
   render() {
+    console.log("@render", this, this.props.store.menuVisible);
     return (
       <div className="layout">
         <AppBarView />
-        <div className="header-zone text-selection-disabled">
-          <MenuContainer />
-        </div>
-        <div className="body-zone custom-scrollbar">
-          {/* <div className="menu"></div> */}
+        {this.props.store.menuVisible && (
+          <div className={`header-zone text-selection-disabled`}>
+            <MenuContainer />
+          </div>
+        )}
+        <div
+          className="body-zone custom-scrollbar"
+          onScroll={this.props.store.onScroll}
+        >
           <div className="content-view">
             <ContentContainer />
           </div>
-          {/* <div className="summary">
-            <SummaryContainer />
-          </div> */}
         </div>
       </div>
     );
