@@ -1,13 +1,13 @@
 import React, { Component, Fragment } from "react";
-import { MenuItem } from "../component";
+import { Link } from "react-router-dom";
 class MenuContainer extends Component {
   render() {
     return (
       <Fragment>
-        <MenuItem path="/study">공부</MenuItem>
-        <MenuItem path="/review">리뷰</MenuItem>
-        <MenuItem path="/scrap">스크랩</MenuItem>
-        <MenuItem path="/things">이것저것</MenuItem>
+        <Link to="/study">공부</Link>
+        <Link to="/review">리뷰</Link>
+        <Link to="/scrap">스크랩</Link>
+        <Link to="/things">이것저것</Link>
       </Fragment>
     );
   }

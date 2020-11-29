@@ -17,7 +17,7 @@ const PostCardList = ({ context, match, ...props }) => {
   ));
   return (
     <div className="post-container">
-      <div className="post-list-category">{category}</div>
+      {/* <div className="post-list-category">{category}</div> */}
       <div className="post-list">{cards}</div>
     </div>
   );

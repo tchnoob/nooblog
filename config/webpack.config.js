@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "[name].bundle.js",
-    publicPath: "/",
+    publicPath: "/nooblog",
   },
   devServer: {
     contentBase: "./src",
