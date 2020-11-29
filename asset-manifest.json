@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nooblog/static/css/main.5f413379.chunk.css",
+    "main.css": "/nooblog/static/css/main.c29c548a.chunk.css",
     "main.js": "/nooblog/static/js/main.5137cbae.chunk.js",
     "main.js.map": "/nooblog/static/js/main.5137cbae.chunk.js.map",
     "runtime-main.js": "/nooblog/static/js/runtime-main.31f7c999.js",
@@ -8,13 +8,13 @@
     "static/js/2.9bba5be2.chunk.js": "/nooblog/static/js/2.9bba5be2.chunk.js",
     "static/js/2.9bba5be2.chunk.js.map": "/nooblog/static/js/2.9bba5be2.chunk.js.map",
     "index.html": "/nooblog/index.html",
-    "static/css/main.5f413379.chunk.css.map": "/nooblog/static/css/main.5f413379.chunk.css.map",
+    "static/css/main.c29c548a.chunk.css.map": "/nooblog/static/css/main.c29c548a.chunk.css.map",
     "static/js/2.9bba5be2.chunk.js.LICENSE.txt": "/nooblog/static/js/2.9bba5be2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.31f7c999.js",
     "static/js/2.9bba5be2.chunk.js",
-    "static/css/main.5f413379.chunk.css",
+    "static/css/main.c29c548a.chunk.css",
     "static/js/main.5137cbae.chunk.js"
   ]
 }
