@@ -4,10 +4,10 @@ class MenuContainer extends Component {
   render() {
     return (
       <Fragment>
-        <Link to="/study">공부</Link>
-        <Link to="/review">리뷰</Link>
-        <Link to="/scrap">스크랩</Link>
-        <Link to="/things">이것저것</Link>
+        <Link to="/공부">공부</Link>
+        <Link to="/리뷰">리뷰</Link>
+        <Link to="/스크랩">스크랩</Link>
+        <Link to="/이것저것">이것저것</Link>
       </Fragment>
     );
   }
