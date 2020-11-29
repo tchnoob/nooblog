@@ -4,8 +4,8 @@ import { ContentContainer, MenuContainer } from "../container";
 import AppBarView from "../component/AppBarView";
 import "./style.css";
 
-@inject("store")
-@observer
+// @inject("store")
+// @observer
 class MainLayout extends Component {
   render() {
     console.log("@render", this, this.props.store.menuVisible);
@@ -30,4 +30,4 @@ class MainLayout extends Component {
   }
 }
 
-export default MainLayout;
+export default inject("store")(observer(MainLayout));

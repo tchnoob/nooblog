@@ -10,8 +10,8 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-@inject("store")
-@observer
+// @inject("store")
+// @observer
 class AppBarView extends Component {
   // constructor(props) {
   //   super(props);
@@ -62,4 +62,4 @@ class AppBarView extends Component {
   }
 }
 
-export default AppBarView;
+export default inject("store")(observer(AppBarView));
