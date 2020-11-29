@@ -15,7 +15,7 @@ class MainLayout extends Component {
         <div className="header-zone text-selection-disabled">
           <MenuContainer />
         </div>
-        <div className="body-zone">
+        <div className="body-zone custom-scrollbar">
           {/* <div className="menu"></div> */}
           <div className="content-view">
             <ContentContainer />
