@@ -9,7 +9,7 @@ class ContentContainer extends Component {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/post/:query" component={Post} />
-        <Route path="/:category" component={PostCardList} />
+        <Route exact path="/:category" component={PostCardList} />
       </Switch>
     );
   }

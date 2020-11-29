@@ -8,7 +8,11 @@ const PostCardList = ({ context, match }) => {
     <PostCard
       key={`postcard${i}`}
       index={i}
-      context={{ title: `Post ${i}`, image: null, text: `Post content ${i}` }}
+      context={{
+        title: `Post ${i}`,
+        image: null,
+        text: `Post content ${i}`,
+      }}
     />
   ));
   return (
