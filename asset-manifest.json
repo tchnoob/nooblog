@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nooblog/static/css/main.5f413379.chunk.css",
-    "main.js": "/nooblog/static/js/main.f6e0c51f.chunk.js",
-    "main.js.map": "/nooblog/static/js/main.f6e0c51f.chunk.js.map",
+    "main.js": "/nooblog/static/js/main.66159b06.chunk.js",
+    "main.js.map": "/nooblog/static/js/main.66159b06.chunk.js.map",
     "runtime-main.js": "/nooblog/static/js/runtime-main.31f7c999.js",
     "runtime-main.js.map": "/nooblog/static/js/runtime-main.31f7c999.js.map",
     "static/js/2.248026ef.chunk.js": "/nooblog/static/js/2.248026ef.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.31f7c999.js",
     "static/js/2.248026ef.chunk.js",
     "static/css/main.5f413379.chunk.css",
-    "static/js/main.f6e0c51f.chunk.js"
+    "static/js/main.66159b06.chunk.js"
   ]
 }
