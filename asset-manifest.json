@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nooblog/static/css/main.41b526a9.chunk.css",
-    "main.js": "/nooblog/static/js/main.e9146a24.chunk.js",
-    "main.js.map": "/nooblog/static/js/main.e9146a24.chunk.js.map",
+    "main.css": "/nooblog/static/css/main.c13518ce.chunk.css",
+    "main.js": "/nooblog/static/js/main.4d40e17e.chunk.js",
+    "main.js.map": "/nooblog/static/js/main.4d40e17e.chunk.js.map",
     "runtime-main.js": "/nooblog/static/js/runtime-main.31f7c999.js",
     "runtime-main.js.map": "/nooblog/static/js/runtime-main.31f7c999.js.map",
-    "static/js/2.9bba5be2.chunk.js": "/nooblog/static/js/2.9bba5be2.chunk.js",
-    "static/js/2.9bba5be2.chunk.js.map": "/nooblog/static/js/2.9bba5be2.chunk.js.map",
+    "static/js/2.45cec4ab.chunk.js": "/nooblog/static/js/2.45cec4ab.chunk.js",
+    "static/js/2.45cec4ab.chunk.js.map": "/nooblog/static/js/2.45cec4ab.chunk.js.map",
     "index.html": "/nooblog/index.html",
-    "static/css/main.41b526a9.chunk.css.map": "/nooblog/static/css/main.41b526a9.chunk.css.map",
-    "static/js/2.9bba5be2.chunk.js.LICENSE.txt": "/nooblog/static/js/2.9bba5be2.chunk.js.LICENSE.txt"
+    "static/css/main.c13518ce.chunk.css.map": "/nooblog/static/css/main.c13518ce.chunk.css.map",
+    "static/js/2.45cec4ab.chunk.js.LICENSE.txt": "/nooblog/static/js/2.45cec4ab.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.31f7c999.js",
-    "static/js/2.9bba5be2.chunk.js",
-    "static/css/main.41b526a9.chunk.css",
-    "static/js/main.e9146a24.chunk.js"
+    "static/js/2.45cec4ab.chunk.js",
+    "static/css/main.c13518ce.chunk.css",
+    "static/js/main.4d40e17e.chunk.js"
   ]
 }
