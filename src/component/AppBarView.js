@@ -8,16 +8,10 @@ import MenuIcon from "@material-ui/icons/Menu";
 import InputBase from "@material-ui/core/InputBase";
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
+import { LoginButton } from "./";
 import "./style.css";
 
-// @inject("store")
-// @observer
 class AppBarView extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.store = props.store;
-  // }
-
   render() {
     return (
       <AppBar position="static" className="text-selection-disabled">
@@ -49,13 +43,14 @@ class AppBarView extends Component {
             {this.props.store.title}
           </Typography>
 
-          <div className="app-bar-search">
-            <SearchIcon className="search-icon" />
-            <InputBase
+          {/* <div className="app-bar-search"> */}
+          <SearchIcon className="cursor-pointer search-icon" />
+          {/* <InputBase
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
-            />
-          </div>
+            /> */}
+          {/* </div> */}
+          <LoginButton />
         </Toolbar>
       </AppBar>
     );
