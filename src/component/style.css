@@ -138,6 +138,7 @@ a:active {
   font-size: 110%;
   position: absolute;
   right: 20px;
+  letter-spacing: -2px;
 }
 
 .cursor-pointer {
